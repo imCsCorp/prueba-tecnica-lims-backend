@@ -8,7 +8,7 @@ import java.util.Optional;
 public interface UserDTORepository {
     UserDTO save(UserDTO user);
     List<UserDTO> getAll();
-    Optional<UserDTO> getById(int userId);
-    void delete(int userId);
+    Optional<UserDTO> getById(long userId);
+    void delete(long userId);
     Optional<UserDTO> getByUsername(String email);
 }
