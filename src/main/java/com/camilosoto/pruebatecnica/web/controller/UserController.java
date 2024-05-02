@@ -24,7 +24,7 @@ public class UserController {
 
     @PutMapping("/update")
     public ResponseEntity<UserDTO> update(@RequestBody UserDTO user){
-        return new ResponseEntity<>(userService.create(user), HttpStatus.CREATED);
+        return new ResponseEntity<>(userService.update(user), HttpStatus.CREATED);
     }
 
     @DeleteMapping("/delete/{id}")

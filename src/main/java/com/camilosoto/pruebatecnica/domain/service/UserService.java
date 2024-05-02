@@ -13,7 +13,7 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public UserDTO create(UserDTO user){
+    public UserDTO update(UserDTO user){
         return userRepository.save(user);
     }
 
