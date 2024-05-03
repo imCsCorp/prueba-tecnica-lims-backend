@@ -11,9 +11,17 @@ import java.util.Optional;
 public class AuthService {
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private UserService userService;
 
     public UserDTO create(UserDTO user){
-        return userRepository.save(user);
+        UserDTO record = new UserDTO();
+        record.setFirstName(user.getFirstName());
+        record.setLastName(user.getLastName());
+        record.setEmail(user.getEmail());
+        record.setPassword(userService.encryptPassword(user.getPassword()));
+        record.setActive(true);
+        return userRepository.save(record);
     }
 
     public Optional<UserDTO> findByEmail(String email){
