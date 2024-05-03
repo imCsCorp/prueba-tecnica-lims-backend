@@ -35,6 +35,10 @@ public class UserService {
         }).orElse(false);
     }
 
+    public Optional<UserDTO> findByUsername(String email){
+        return userRepository.getByUsername(email);
+    }
+
     public String encryptPassword(String password) {
         return passwordEncoder.encode(password);
     }
