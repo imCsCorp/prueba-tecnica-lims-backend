@@ -18,7 +18,7 @@ public class JwtUtil {
                 .withSubject(username)
                 .withIssuer("cscorp")
                 .withIssuedAt(new Date())
-                .withExpiresAt(new Date(System.currentTimeMillis() + TimeUnit.DAYS.toMillis(15)))
+                .withExpiresAt(new Date(System.currentTimeMillis() + TimeUnit.DAYS.toMillis(1)))
                 .sign(ALGORITHM);
     }
 
