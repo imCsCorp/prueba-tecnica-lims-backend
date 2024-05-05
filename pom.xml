@@ -63,6 +63,16 @@
 			<artifactId>java-jwt</artifactId>
 			<version>4.3.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.camilo-soto</groupId>
+			<artifactId>prueba-tecnica</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>
