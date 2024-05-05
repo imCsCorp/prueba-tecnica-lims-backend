@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.camilo-soto</groupId>
 	<artifactId>prueba-tecnica</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>prueba-tecnica</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Prueba tecnica</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -63,8 +63,6 @@
 			<artifactId>java-jwt</artifactId>
 			<version>4.3.0</version>
 		</dependency>
-
-
 	</dependencies>
 
 	<build>
@@ -79,6 +77,13 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 		</plugins>
